@@ -72,6 +72,7 @@
         }
 
         button {
+            margin-top: 20px;
             background-color: #150417;
             color: white;
             padding: 12px 30px;
@@ -119,7 +120,7 @@
 
     <div class="container">
         <!-- Formulario de Contacto -->
-        <section class="contact-form">
+        <section class="contact-form"> 
             <h2>Envíanos un mensaje</h2>
 
             <form id="contactForm">
@@ -156,13 +157,14 @@
                 <button type="submit" name='button' id="button">Enviar Mensaje</button>
 
             </form>
-
+        </section>
+    </div>
             
 
 
     
 
-
+    <!-- EmailJS - Google Sheets-->
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript"> emailjs.init('O06bpb2D0eJZvyk2l')</script>
@@ -178,6 +180,7 @@
 
 
 
+    
     const recaptcha = grecaptcha.getResponse();
     if (!recaptcha) {
         alert("Por favor verifica que no eres un robot");
@@ -214,7 +217,7 @@
         alert("Error al enviar el correo");
     });
     });
-</script>
+    </script>
 
 
 
